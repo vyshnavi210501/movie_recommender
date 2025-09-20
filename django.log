@@ -284,3 +284,55 @@ TypeError: 'Meta.fields' must not contain non-model field names: release_year
 [ERROR] 2025-09-19 21:48:18,029 django.server | "GET /api/movies/?genre=Action HTTP/1.1" 500 130640
 [INFO] 2025-09-19 21:49:08,264 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
 [INFO] 2025-09-19 21:49:08,820 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-19 21:49:16,182 django.server | "GET /api/movies/?genre=Action HTTP/1.1" 200 1009
+[INFO] 2025-09-19 21:52:02,876 django.server | "GET //api/movies/?search=dark HTTP/1.1" 200 1008
+[INFO] 2025-09-19 21:52:38,267 django.server | "GET //api/movies/?ordering=-release_year HTTP/1.1" 200 1019
+[INFO] 2025-09-19 21:53:07,838 django.server | "GET //api/movies/?ordering=-release_date HTTP/1.1" 200 1019
+[INFO] 2025-09-19 21:53:35,399 django.server | "GET //api/movies/?genre=comedy HTTP/1.1" 200 1009
+[INFO] 2025-09-19 21:53:51,981 django.server | "GET //api/movies/?genres=comedy HTTP/1.1" 200 927
+[INFO] 2025-09-20 22:15:40,839 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-20 22:17:32,241 django.request | Not Found: /
+[WARNING] 2025-09-20 22:17:32,242 django.server | "GET / HTTP/1.1" 404 2677
+[WARNING] 2025-09-20 22:17:32,317 django.request | Not Found: /favicon.ico
+[WARNING] 2025-09-20 22:17:32,317 django.server | "GET /favicon.ico HTTP/1.1" 404 2728
+[INFO] 2025-09-20 22:17:42,697 django.server | "GET /api/movies/1 HTTP/1.1" 301 0
+[INFO] 2025-09-20 22:17:42,729 django.server | "GET /api/movies/1/ HTTP/1.1" 200 110
+[WARNING] 2025-09-20 22:17:50,115 django.request | Not Found: /api/movies/2//
+[WARNING] 2025-09-20 22:17:50,116 django.server | "GET /api/movies/2// HTTP/1.1" 404 3133
+[INFO] 2025-09-20 22:17:53,098 django.server | "GET /api/movies/2/ HTTP/1.1" 200 91
+[INFO] 2025-09-20 22:51:13,176 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\serializers.py changed, reloading.
+[INFO] 2025-09-20 22:51:14,237 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-20 22:52:00,995 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-20 22:52:02,173 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-20 22:53:30,460 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-20 22:53:31,639 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-20 22:53:39,813 django.request | Not Found: /api/
+[WARNING] 2025-09-20 22:53:39,815 django.server | "GET /api/ HTTP/1.1" 404 3918
+[INFO] 2025-09-20 22:53:50,109 django.server | "GET /api/ratings/ HTTP/1.1" 200 52
+[WARNING] 2025-09-20 22:54:02,986 django.request | Not Found: /api/ratings/inception
+[WARNING] 2025-09-20 22:54:02,987 django.server | "GET /api/ratings/inception HTTP/1.1" 404 3969
+[INFO] 2025-09-20 22:54:16,766 django.server | "GET /api/ratings/ HTTP/1.1" 200 52
+[INFO] 2025-09-20 22:55:54,124 django.server | "GET /api/ratings/add HTTP/1.1" 301 0
+[WARNING] 2025-09-20 22:55:54,150 django.request | Method Not Allowed: /api/ratings/add/
+[WARNING] 2025-09-20 22:55:54,152 django.server | "GET /api/ratings/add/ HTTP/1.1" 405 40
+[INFO] 2025-09-20 22:58:43,861 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-20 22:58:44,908 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-20 22:59:12,516 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-20 22:59:13,648 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-20 22:59:34,959 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-20 22:59:36,196 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-20 22:59:42,910 django.request | Not Found: /api/ratings/add/
+[WARNING] 2025-09-20 22:59:42,911 django.server | "GET /api/ratings/add/ HTTP/1.1" 404 3693
+[INFO] 2025-09-20 22:59:53,909 django.server | "GET /api/ratings/ HTTP/1.1" 200 52
+[INFO] 2025-09-20 23:01:03,873 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[WARNING] 2025-09-20 23:05:47,061 django.request | Forbidden: /api/ratings/
+[WARNING] 2025-09-20 23:05:47,062 django.server | "POST /api/ratings/?Authorization=Bearer%20%20%20%20%20%22access%22:%20%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4Mzg5NzYzLCJpYXQiOjE3NTgzODk0NjMsImp0aSI6IjM1ZDgzMmQwMDdlODQzNTJhMmU4ZjAzOWE4ZWYxNDJkIiwidXNlcl9pZCI6IjI3OCJ9.sYzCk7sj7uOFpOduwHcHtqR9rWrWeeKPA3lgU2x4FIs%22%0A HTTP/1.1" 403 58
+[WARNING] 2025-09-20 23:06:15,145 django.request | Forbidden: /api/ratings/
+[WARNING] 2025-09-20 23:06:15,146 django.server | "POST /api/ratings/?Authorization=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4Mzg5NzYzLCJpYXQiOjE3NTgzODk0NjMsImp0aSI6IjM1ZDgzMmQwMDdlODQzNTJhMmU4ZjAzOWE4ZWYxNDJkIiwidXNlcl9pZCI6IjI3OCJ9.sYzCk7sj7uOFpOduwHcHtqR9rWrWeeKPA3lgU2x4FIs%0A HTTP/1.1" 403 58
+[WARNING] 2025-09-20 23:11:36,924 django.request | Not Found: /api/gettoken/
+[WARNING] 2025-09-20 23:11:36,925 django.server | "POST /api/gettoken/ HTTP/1.1" 404 3685
+[INFO] 2025-09-20 23:12:15,986 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[WARNING] 2025-09-20 23:12:46,322 django.request | Forbidden: /api/ratings/
+[WARNING] 2025-09-20 23:12:46,323 django.server | "POST /api/ratings/ HTTP/1.1" 403 58
+[INFO] 2025-09-20 23:14:06,511 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movie_recommender\settings.py changed, reloading.
+[INFO] 2025-09-20 23:14:07,740 django.utils.autoreload | Watching for file changes with StatReloader
