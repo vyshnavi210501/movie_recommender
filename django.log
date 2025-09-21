@@ -336,3 +336,12 @@ TypeError: 'Meta.fields' must not contain non-model field names: release_year
 [WARNING] 2025-09-20 23:12:46,323 django.server | "POST /api/ratings/ HTTP/1.1" 403 58
 [INFO] 2025-09-20 23:14:06,511 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movie_recommender\settings.py changed, reloading.
 [INFO] 2025-09-20 23:14:07,740 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-20 23:14:11,013 django.server | "POST /api/ratings/ HTTP/1.1" 201 35
+[INFO] 2025-09-20 23:14:22,681 django.server | "GET /api/ratings/ HTTP/1.1" 200 87
+[INFO] 2025-09-21 12:18:15,550 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 12:20:15,904 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-21 12:20:16,941 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 12:20:20,460 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 12:20:21,463 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 12:20:23,122 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 12:20:24,190 django.utils.autoreload | Watching for file changes with StatReloader
