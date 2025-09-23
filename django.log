@@ -345,3 +345,242 @@ TypeError: 'Meta.fields' must not contain non-model field names: release_year
 [INFO] 2025-09-21 12:20:21,463 django.utils.autoreload | Watching for file changes with StatReloader
 [INFO] 2025-09-21 12:20:23,122 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
 [INFO] 2025-09-21 12:20:24,190 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-21 12:21:12,877 django.request | Not Found: /
+[WARNING] 2025-09-21 12:21:12,879 django.server | "GET / HTTP/1.1" 404 2677
+[WARNING] 2025-09-21 12:21:12,989 django.request | Not Found: /favicon.ico
+[WARNING] 2025-09-21 12:21:12,989 django.server | "GET /favicon.ico HTTP/1.1" 404 2728
+[WARNING] 2025-09-21 12:21:18,408 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 12:21:18,409 django.server | "GET /api/ratings/ HTTP/1.1" 401 58
+[INFO] 2025-09-21 12:21:29,812 django.server | "GET /api/recommendations HTTP/1.1" 301 0
+[WARNING] 2025-09-21 12:21:29,829 django.request | Unauthorized: /api/recommendations/
+[WARNING] 2025-09-21 12:21:29,830 django.server | "GET /api/recommendations/ HTTP/1.1" 401 58
+[ERROR] 2025-09-21 12:22:04,821 django.request | Internal Server Error: /api/recommendations
+Traceback (most recent call last):
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/recommendations/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[ERROR] 2025-09-21 12:22:04,826 django.server | "POST /api/recommendations HTTP/1.1" 500 69928
+[INFO] 2025-09-21 12:22:09,861 django.server | "GET /api/recommendations HTTP/1.1" 301 0
+[WARNING] 2025-09-21 12:22:09,868 django.request | Unauthorized: /api/recommendations/
+[WARNING] 2025-09-21 12:22:09,869 django.server | "GET /api/recommendations/ HTTP/1.1" 401 58
+[INFO] 2025-09-21 12:22:23,604 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[INFO] 2025-09-21 12:22:50,211 django.server | "GET /api/recommendations HTTP/1.1" 301 0
+[INFO] 2025-09-21 12:22:50,258 django.server | "GET /api/recommendations/ HTTP/1.1" 200 929
+[INFO] 2025-09-21 12:23:38,483 django.server | "GET /api/ratings/ HTTP/1.1" 200 87
+[WARNING] 2025-09-21 12:23:45,837 django.request | Not Found: /api/ratings/1
+[WARNING] 2025-09-21 12:23:45,838 django.server | "GET /api/ratings/1 HTTP/1.1" 404 3961
+[INFO] 2025-09-21 19:14:47,728 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 19:14:55,607 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-21 19:14:56,161 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 19:14:59,402 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 19:14:59,943 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-21 19:15:05,884 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 19:15:05,885 django.server | "GET /api/ratings/ HTTP/1.1" 401 58
+[WARNING] 2025-09-21 19:15:05,961 django.request | Not Found: /favicon.ico
+[WARNING] 2025-09-21 19:15:05,962 django.server | "GET /favicon.ico HTTP/1.1" 404 2728
+[WARNING] 2025-09-21 19:15:19,074 django.request | Not Found: /api/ratings/1
+[WARNING] 2025-09-21 19:15:19,074 django.server | "GET /api/ratings/1 HTTP/1.1" 404 4256
+[WARNING] 2025-09-21 19:15:24,095 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 19:15:24,096 django.server | "GET /api/ratings/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 19:15:34,579 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[INFO] 2025-09-21 19:15:56,107 django.server | "GET /api/recommendations HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:15:56,125 django.server | "GET /api/recommendations/ HTTP/1.1" 200 929
+[INFO] 2025-09-21 19:16:03,732 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:16:03,846 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 200 1296
+[WARNING] 2025-09-21 19:16:57,432 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 19:16:57,433 django.server | "POST /api/ratings/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 19:17:07,550 django.server | "POST /api/ratings/ HTTP/1.1" 201 35
+[INFO] 2025-09-21 19:17:21,723 django.server | "GET /api/ratings/ HTTP/1.1" 200 123
+[INFO] 2025-09-21 19:17:34,855 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:17:34,951 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 200 1296
+[INFO] 2025-09-21 19:17:36,942 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:17:37,039 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 200 1296
+[INFO] 2025-09-21 19:17:52,735 django.server | "GET /api/ratings/ HTTP/1.1" 200 123
+[INFO] 2025-09-21 19:19:12,471 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:19:12,554 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 200 1296
+[WARNING] 2025-09-21 19:24:10,996 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 19:24:10,997 django.server | "GET /api/ratings/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 19:24:21,036 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[INFO] 2025-09-21 19:24:35,511 django.server | "GET /api/ratings/ HTTP/1.1" 200 123
+[WARNING] 2025-09-21 19:25:16,011 django.request | Unauthorized: /api/ratings/
+[WARNING] 2025-09-21 19:25:16,012 django.server | "POST /api/ratings/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 19:25:27,050 django.server | "POST /api/ratings/ HTTP/1.1" 201 35
+[INFO] 2025-09-21 19:25:33,213 django.server | "GET /api/ratings/ HTTP/1.1" 200 159
+[INFO] 2025-09-21 19:26:27,355 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[WARNING] 2025-09-21 19:26:27,358 django.request | Unauthorized: /api/recommendations/weighted/
+[WARNING] 2025-09-21 19:26:27,359 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 19:26:36,094 django.server | "GET /api/recommendations/weighted HTTP/1.1" 301 0
+[INFO] 2025-09-21 19:26:36,187 django.server | "GET /api/recommendations/weighted/ HTTP/1.1" 200 1296
+[INFO] 2025-09-21 19:26:55,427 django.server | "GET /api/recommendations/ HTTP/1.1" 200 929
+[INFO] 2025-09-21 19:31:38,650 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 19:31:39,236 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 19:32:33,961 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 19:32:34,636 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 21:26:32,910 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 21:26:34,246 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 21:27:11,493 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 21:27:12,653 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 21:28:42,501 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 21:28:43,617 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 21:29:13,660 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\urls.py changed, reloading.
+[INFO] 2025-09-21 21:29:14,787 django.utils.autoreload | Watching for file changes with StatReloader
+[ERROR] 2025-09-21 21:29:27,821 django.request | Internal Server Error: /api/movies/add
+Traceback (most recent call last):
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/movies/add/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[ERROR] 2025-09-21 21:29:27,826 django.server | "POST /api/movies/add HTTP/1.1" 500 70154
+[ERROR] 2025-09-21 21:30:26,001 django.request | Internal Server Error: /api/movies/add
+Traceback (most recent call last):
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/movies/add/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[ERROR] 2025-09-21 21:30:26,004 django.server | "POST /api/movies/add HTTP/1.1" 500 70161
+[INFO] 2025-09-21 21:30:40,621 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[ERROR] 2025-09-21 21:31:09,184 django.request | Internal Server Error: /api/movies/add
+Traceback (most recent call last):
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\vyshn\movie_recommender\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/movies/add/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[ERROR] 2025-09-21 21:31:09,185 django.server | "POST /api/movies/add HTTP/1.1" 500 70309
+[WARNING] 2025-09-21 21:31:21,327 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 21:31:21,332 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 21:31:40,921 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[WARNING] 2025-09-21 21:32:02,369 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 21:32:02,370 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 21:32:21,392 django.server | "GET /admin/ HTTP/1.1" 200 9372
+[INFO] 2025-09-21 21:32:21,410 django.server | "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,410 django.server | "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,414 django.server | "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,417 django.server | "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,421 django.server | "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,421 django.server | "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,455 django.server | "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,475 django.server | "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:21,475 django.server | "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:25,072 django.server | "POST /admin/logout/ HTTP/1.1" 200 3568
+[INFO] 2025-09-21 21:32:27,433 django.server | "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-09-21 21:32:27,623 django.server | "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[INFO] 2025-09-21 21:32:27,638 django.server | "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:32:41,228 django.server | "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4344
+[INFO] 2025-09-21 21:32:50,500 django.server | "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[INFO] 2025-09-21 21:32:50,529 django.server | "GET /admin/ HTTP/1.1" 200 9372
+[INFO] 2025-09-21 21:59:20,596 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 21:59:21,458 django.server | "GET /admin/movies/userprofile/ HTTP/1.1" 200 9630
+[INFO] 2025-09-21 21:59:21,505 django.server | "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,510 django.server | "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,515 django.server | "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,519 django.server | "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,519 django.server | "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,519 django.server | "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,520 django.server | "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,531 django.server | "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:21,579 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-21 21:59:21,589 django.server | "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[INFO] 2025-09-21 21:59:21,615 django.server | "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2025-09-21 21:59:21,658 django.server | "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO] 2025-09-21 21:59:25,495 django.server | "GET /admin/movies/userprofile/ HTTP/1.1" 200 9630
+[INFO] 2025-09-21 21:59:25,522 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-21 21:59:26,839 django.server | "GET /admin/auth/user/ HTTP/1.1" 200 58847
+[INFO] 2025-09-21 21:59:26,862 django.server | "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2025-09-21 21:59:26,871 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-21 21:59:26,881 django.server | "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[INFO] 2025-09-21 21:59:26,908 django.server | "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[INFO] 2025-09-21 21:59:26,927 django.server | "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO] 2025-09-21 22:00:45,095 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[INFO] 2025-09-21 22:01:03,810 django.server | "POST /api/ratings/ HTTP/1.1" 201 35
+[INFO] 2025-09-21 22:01:16,455 django.server | "POST /api/ratings/ HTTP/1.1" 201 35
+[WARNING] 2025-09-21 22:01:36,078 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:01:36,079 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 22:03:58,069 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\permissions.py changed, reloading.
+[INFO] 2025-09-21 22:03:59,138 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-21 22:21:30,599 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 22:21:31,954 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-21 22:21:35,475 django.request | Unauthorized: /api/movies/add/
+[WARNING] 2025-09-21 22:21:35,476 django.server | "POST /api/movies/add/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 22:21:44,791 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[INFO] 2025-09-21 22:22:07,274 django.server | "POST /api/movies/add/ HTTP/1.1" 201 66
+[INFO] 2025-09-21 22:27:31,935 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\views.py changed, reloading.
+[INFO] 2025-09-21 22:27:33,195 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-21 22:27:45,946 django.request | Unauthorized: /api/movies/add/
+[WARNING] 2025-09-21 22:27:45,947 django.server | "POST /api/movies/add/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 22:27:55,265 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[WARNING] 2025-09-21 22:28:11,533 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:28:11,534 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 22:28:42,348 django.server | "GET /admin/auth/group/add/ HTTP/1.1" 200 14747
+[INFO] 2025-09-21 22:28:42,377 django.server | "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,384 django.server | "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,386 django.server | "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,388 django.server | "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,388 django.server | "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,390 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-21 22:28:42,393 django.server | "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:28:42,448 django.server | "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:29:30,709 django.server | "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-21 22:29:30,748 django.server | "GET /admin/auth/group/ HTTP/1.1" 200 11398
+[INFO] 2025-09-21 22:29:30,767 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-21 22:29:30,799 django.server | "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2025-09-21 22:29:37,224 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\permissions.py changed, reloading.
+[INFO] 2025-09-21 22:29:38,368 django.utils.autoreload | Watching for file changes with StatReloader
+[WARNING] 2025-09-21 22:29:41,018 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:29:41,019 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[WARNING] 2025-09-21 22:29:42,792 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:29:42,793 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 22:29:51,475 django.server | "GET /admin/auth/group/1/change/ HTTP/1.1" 200 14980
+[INFO] 2025-09-21 22:29:51,504 django.server | "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-09-21 22:30:22,745 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:30:22,746 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-21 22:36:37,539 django.server | "GET /api/movies/add HTTP/1.1" 301 0
+[WARNING] 2025-09-21 22:36:37,552 django.request | Unauthorized: /api/movies/add/
+[WARNING] 2025-09-21 22:36:37,553 django.server | "GET /api/movies/add/ HTTP/1.1" 401 58
+[WARNING] 2025-09-21 22:36:52,471 django.request | Unauthorized: /api/movies/add/
+[WARNING] 2025-09-21 22:36:52,472 django.server | "POST /api/movies/add/ HTTP/1.1" 401 172
+[INFO] 2025-09-21 22:36:59,325 django.server | "POST /api/token/ HTTP/1.1" 200 494
+[WARNING] 2025-09-21 22:37:32,163 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-21 22:37:32,164 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-23 20:43:46,594 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-23 20:43:58,224 django.server | "POST /api/token/ HTTP/1.1" 200 489
+[WARNING] 2025-09-23 20:44:34,151 django.request | Unauthorized: /api/movies/add/
+[WARNING] 2025-09-23 20:44:34,152 django.server | "POST /api/movies/add/ HTTP/1.1" 401 172
+[WARNING] 2025-09-23 20:44:47,951 django.request | Forbidden: /api/movies/add/
+[WARNING] 2025-09-23 20:44:47,952 django.server | "POST /api/movies/add/ HTTP/1.1" 403 63
+[INFO] 2025-09-23 20:48:24,703 django.utils.autoreload | C:\Users\vyshn\movie_recommender\movies\permissions.py changed, reloading.
+[INFO] 2025-09-23 20:48:25,989 django.utils.autoreload | Watching for file changes with StatReloader
+[INFO] 2025-09-23 20:48:27,443 django.server | "POST /api/movies/add/ HTTP/1.1" 201 63
+[INFO] 2025-09-23 20:48:41,233 django.server | "POST /api/movies/add/ HTTP/1.1" 201 77
